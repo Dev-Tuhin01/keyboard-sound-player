@@ -7,7 +7,7 @@
 int main(int argc, char const *argv[])
 {
     int delay = 1000 ;
-    float octave = 7;
+    float octave = 4;
     float keynote[] = {32.7,    //sa0
                                 34.6,   //re_1
                                 36.7,   //re2
