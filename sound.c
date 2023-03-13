@@ -7,8 +7,8 @@
 int main(int argc, char const *argv[])
 {
     int delay = 1000 ;
-    float multiplayer = 7;
-    float frequencyOctave[] = {32.7,    //sa0
+    float octave = 7;
+    float keynote[] = {32.7,    //sa0
                                 34.6,   //re_1
                                 36.7,   //re2
                                 38.8,   //ga_3
@@ -37,43 +37,43 @@ int main(int argc, char const *argv[])
         switch (op)
         {
         case '1':
-            Beep(frequencyOctave[0] * multiplayer, delay);
+            Beep(keynote[0] * octave, delay);
             break;
         case '2':
-            Beep(frequencyOctave[2] * multiplayer, delay);
+            Beep(keynote[2] * octave, delay);
             break;
         case '3':
-            Beep(frequencyOctave[4] * multiplayer, delay);
+            Beep(keynote[4] * octave, delay);
             break;
         case '4':
-            Beep(frequencyOctave[5] * multiplayer, delay);
+            Beep(keynote[5] * octave, delay);
             break;
         case '5':
-            Beep(frequencyOctave[7] * multiplayer, delay);
+            Beep(keynote[7] * octave, delay);
             break;
         case '6':
-            Beep(frequencyOctave[9] * multiplayer, delay);
+            Beep(keynote[9] * octave, delay);
             break;
         case '7':
-            Beep(frequencyOctave[11] * multiplayer, delay);
+            Beep(keynote[11] * octave, delay);
             break;
         case '8':
-            Beep(frequencyOctave[0] * multiplayer * 2, delay);
+            Beep(keynote[0] * octave * 2, delay);
             break;
         case '@':
-            Beep(frequencyOctave[1] * multiplayer, delay);
+            Beep(keynote[1] * octave, delay);
             break;
         case '#':
-            Beep(frequencyOctave[3] * multiplayer, delay);
+            Beep(keynote[3] * octave, delay);
             break;
         case '$':
-            Beep(frequencyOctave[6] * multiplayer, delay);
+            Beep(keynote[6] * octave, delay);
             break;
         case '^':
-            Beep(frequencyOctave[8] * multiplayer, delay);
+            Beep(keynote[8] * octave, delay);
             break;
         case '&':
-            Beep(frequencyOctave[10] * multiplayer, delay);
+            Beep(keynote[10] * octave, delay);
             break;
         default:
             goto ed;
